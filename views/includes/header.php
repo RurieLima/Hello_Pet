@@ -1,12 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello Pet</title>
-    <link href="views/css/style.css" rel="stylesheet" type="text/css">
-    <link rel="icon" href="./views/img/" type="image/png">
-</head>
-<body class="text-bg-dark">
-    
+<!-- header menu de navegación -->
+<nav class="navbar px-2 py-3" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="index.php">
+            <img src="views\img\logoHelloPetDark.png">
+        </a>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+    <div id="navbar" class="navbar-menu">
+        <div class="navbar-start has-text-weight-bold">
+        <a href="index.php" class="navbar-item aBackground">
+            Home
+        </a>
+        </div>
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="buttons">
+                <a href="index.php?m=admin" class="button is-light has-text-danger">
+                    <strong>Admin</strong>
+                </a>
+                <?php if(!empty($_SESSION['login'])){ ?>
+                <a href="index.php?m=register" class="button is-light has-text-danger">
+                    <strong>Register</strong>
+                </a>               
+                <?php
+                }
+                ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

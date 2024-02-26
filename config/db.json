@@ -1,0 +1,60 @@
+[
+        {
+            "user_id": 1,
+            "user_email": "cachorro1@gmail.com",
+            "user_name": "Lobo",
+            "user_breed": "Akita",
+            "user_city": "Barcelona",
+            "user_gender": "Male",
+            "user_img": "https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+
+        },
+        {
+            "user_id": 2,
+            "user_email": "cachorro2@gmail.com",
+            "user_name": "Perrita",
+            "user_breed": "Bulterier",
+            "user_city": "Barcelona",
+            "user_gender": "Female",
+            "user_img": "https://images.pexels.com/photos/1851164/pexels-photo-1851164.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+
+        },
+        {
+            "user_id": 3,
+            "user_email": "cachorro3@gmail.com",
+            "user_name": "Doguita",
+            "user_breed": "Husk",
+            "user_city": "Tarragona",
+            "user_gender": "Female",
+            "user_img": "https://images.pexels.com/photos/1254140/pexels-photo-1254140.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        },
+        {
+            "user_id": 4,
+            "user_email": "cachorro4@gmail.com",
+            "user_name": "Duck",
+            "user_breed": "Coocker",
+            "user_city": "Valencia",
+            "user_gender": "Male",
+            "user_img": "https://images.pexels.com/photos/1490908/pexels-photo-1490908.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+
+        },
+        {
+            "user_id": 5,
+            "user_email": "cachorro5@gmail.com",
+            "user_name": "Maria",
+            "user_breed": "Bulterier",
+            "user_city": "Barcelona",
+            "user_gender": "Female",
+            "user_img": "https://images.pexels.com/photos/551628/pexels-photo-551628.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+
+        },
+        {
+            "user_id": 6,
+            "user_email": "cachorro6@gmail.com",
+            "user_name": "Chuck",
+            "user_breed": "N/S",
+            "user_city": "Madrid",
+            "user_gender": "Male",
+            "user_img": "https://images.pexels.com/photos/733416/pexels-photo-733416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        }
+]
