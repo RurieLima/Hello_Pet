@@ -7,43 +7,46 @@
             <div class="hero-head">
                 <?php
                     require_once("includes/header.php");
+                    //var_dump($_SESSION);
                 ?>
             </div>
             <div class="hero-body py-1">
                 <div class="container has-text-centered">
-                    <div>
-                        <h1 class="title is-size-2 p-1 has-text-light">ADMIN</h1>
+                    <div class="columns p-1 mx-1 my-3 box has-background-danger">
+                        <div class="column">
+                            <div>
+                                <a class="button is-primary is-light my-3 tooltip" href="index.php?m=insert"><i class="material-icons">add_box</i>
+                                    <span class="tooltiptext mb-3">New pet</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div>
+                                <a class="button is-warning is-light my-3 tooltip" href="index.php"><i class="material-icons">backspace</i>
+                                    <span class="tooltiptext mb-3">Back</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div>
+                                <?php if(!empty($data)){$t = count($data);}else{$t=0;} ?>
+                                <p class="my-3 has-text-weight-bold has-text-grey-lighter">Total Users:&nbsp <span class="is-size-4 has-text-white-bis"><?php echo $t; ?></span></p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="columns p-1 my-1">
-                        <div class="column my-2">
-                            <div>
-                                <a class="button is-success my-3" href="index.php?m=insert"><i class="material-icons">add_circle_outline</i>&nbsp New user</a>
-                            </div>
-                        </div>
-                        <div class="column my-2">
-                            <div>
-                                <a class="button is-warning my-3" href="index.php"><i class="material-icons">backspace</i>&nbsp Back</a>
-                            </div>
-                        </div>
-                        <div class="column my-2">
-                            <div>
-                                <?php  if(!empty($data)){$t = count($data);}else{$t=0;} ?>
-                                <p class="my-3 p-1 has-text-weight-bold">Total Users:&nbsp <span class="is-size-4 has-text-link"><?php echo $t; ?></span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="columns is-centered my-1">
-                        <div class="table-container column box">
-                            <table class="table">
+                    <div class="has-background-white-bis box p-3 mb-3">
+                        <div class="table-container p-1">
+                            <table class="table table is-bordered table is-striped">
                                 <thead>
-                                    <tr>
-                                        <th>ID</th>
-                                        <th>EMAIL</th>
-                                        <th>NAME</th>
-                                        <th>GENDER</th>
-                                        <th>BRRED</th>
-                                        <th>CITY</th>
-                                        <th colspan="2">ACTION</th>
+                                    <tr class="has-background-danger">
+                                        <th class="has-text-centered has-text-light">ID</th>
+                                        <th class="has-text-centered has-text-light">EMAIL</th>
+                                        <th class="has-text-centered has-text-light">GENDER</th>
+                                        <th class="has-text-centered has-text-light">NAME</th>
+                                        <th class="has-text-centered has-text-light">BREED</th>
+                                        <th class="has-text-centered has-text-light">CITY</th>
+                                        <th class="has-text-centered has-text-light">IMAGE</th>
+                                        <th class="has-text-centered has-text-light">ACTION</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -51,17 +54,27 @@
                                         if(!empty($data)){
                                             foreach($data as $key => $value){ 
                                             ?>
-                                                <tr class="m-3 p-3">
-                                                    <td class="m-3 p-3"><?php echo $value["user_id"];?></td>
-                                                    <td><?php echo $value["user_email"];?></td>
-                                                    <td><?php echo $value["user_name"];?></td>
-                                                    <td><?php echo $value["user_gender"];?></td>
-                                                    <td><?php echo $value["user_breed"];?></td>
-                                                    <td><?php echo $value["user_city"];?></td>
-                                                    <td colspan="2">
-                                                        <a class="button is-link is-light mx-1" href="index.php?m=edit&id=<?php echo $value['user_id']; ?>"><i class="material-icons">edit</i></a>
-                                                        <a class="button is-danger is-light mx-1" href="index.php?m=delete&id=<?php echo $value['user_id']; ?>" 
-                                                        onclick="return confirm('Are you sure?'); false"><i class="material-icons">delete</i></a></td>
+                                                <tr>
+                                                    <td class="is-vcentered has-text-weight-bold has-text-grey-lighter"><?php echo $value["user_id"];?></td>
+                                                    <td class="is-vcentered has-text-weight-bold has-text-grey_dark"><?php echo $value["user_email"];?></td>
+                                                    <td class="is-vcentered has-text-weight-bold <?php $classGender = ($value["user_gender"] == "Female") ? "has-text-danger" : "has-text-info"; echo $classGender;  ?> "><?php echo $value["user_gender"];?></td>
+                                                    <td class="is-vcentered has-text-weight-bold has-text-grey"><?php echo $value["user_name"];?></td>
+                                                    <td class="is-vcentered has-text-weight-bold has-text-grey"><?php echo $value["user_breed"];?></td>
+                                                    <td class="is-vcentered has-text-weight-bold has-text-grey"><?php echo $value["user_city"];?></td>
+                                                    <td class="is-vcentered">
+                                                        <figure>
+                                                            <img src="<?php if(str_contains($value["user_img"], "https") == true){echo $value["user_img"];}else{echo "views/img/" .$value['user_img'];} ?>" class="figImgAdmin m-3" alt="Placeholder image">
+                                                        </figure>
+                                                    </td>
+                                                    <td class="tdMenuAdmin p-3">
+                                                        <a class="button box is-link is-light tooltip is-small my-2 p-1" href="index.php?m=edit&id=<?php echo $value['user_id']; ?>"><i class="material-icons">edit</i>
+                                                            <span class="tooltiptext mb-3">Edit user</span>
+                                                        </a>
+                                                        <a class="button box is-danger is-light tooltip is-small my-2 p-1" href="index.php?m=delete&id=<?php echo $value['user_id']; ?>" 
+                                                            onclick="return confirm('Are you sure delete user id: <?php echo $value['user_id']; ?> ?'); false"><i class="material-icons">delete</i>
+                                                            <span class="tooltiptext mb-3">Delete user</span>
+                                                        </a>
+                                                    </td>
                                                 </tr>   
                                             <?php    
                                             }

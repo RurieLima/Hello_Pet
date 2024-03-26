@@ -1,60 +1,136 @@
 [
-        {
-            "user_id": 1,
-            "user_email": "cachorro1@gmail.com",
-            "user_name": "Lobo",
-            "user_breed": "Akita",
-            "user_city": "Barcelona",
-            "user_gender": "Male",
-            "user_img": "https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-
-        },
-        {
-            "user_id": 2,
-            "user_email": "cachorro2@gmail.com",
-            "user_name": "Perrita",
-            "user_breed": "Bulterier",
-            "user_city": "Barcelona",
-            "user_gender": "Female",
-            "user_img": "https://images.pexels.com/photos/1851164/pexels-photo-1851164.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-
-        },
-        {
-            "user_id": 3,
-            "user_email": "cachorro3@gmail.com",
-            "user_name": "Doguita",
-            "user_breed": "Husk",
-            "user_city": "Tarragona",
-            "user_gender": "Female",
-            "user_img": "https://images.pexels.com/photos/1254140/pexels-photo-1254140.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-        },
-        {
-            "user_id": 4,
-            "user_email": "cachorro4@gmail.com",
-            "user_name": "Duck",
-            "user_breed": "Coocker",
-            "user_city": "Valencia",
-            "user_gender": "Male",
-            "user_img": "https://images.pexels.com/photos/1490908/pexels-photo-1490908.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-
-        },
-        {
-            "user_id": 5,
-            "user_email": "cachorro5@gmail.com",
-            "user_name": "Maria",
-            "user_breed": "Bulterier",
-            "user_city": "Barcelona",
-            "user_gender": "Female",
-            "user_img": "https://images.pexels.com/photos/551628/pexels-photo-551628.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-
-        },
-        {
-            "user_id": 6,
-            "user_email": "cachorro6@gmail.com",
-            "user_name": "Chuck",
-            "user_breed": "N/S",
-            "user_city": "Madrid",
-            "user_gender": "Male",
-            "user_img": "https://images.pexels.com/photos/733416/pexels-photo-733416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-        }
+    {
+        "user_id": "1",
+        "user_name": "Cara de Concha",
+        "user_email": "cachorro1@gmail.com",
+        "user_breed": "Dalmatian",
+        "user_city": "Madrid",
+        "user_gender": "Male",
+        "user_img": "https:\/\/images.pexels.com\/photos\/933498\/pexels-photo-933498.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "user_favorite": [
+            "cachorro2@gmail.com",
+            ""
+        ],
+        "user_gallery": [
+            "https:\/\/images.pexels.com\/photos\/776373\/pexels-photo-776373.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https:\/\/images.pexels.com\/photos\/1448055\/pexels-photo-1448055.jpeg?auto=compress&cs=tinysrgb&w=600"
+        ]
+    },
+    {
+        "user_id": "2",
+        "user_name": "Pedrita",
+        "user_email": "cachorro2@gmail.com",
+        "user_breed": "American-Eskimo-Dog",
+        "user_city": "Barcelona",
+        "user_gender": "Female",
+        "user_img": "https:\/\/images.pexels.com\/photos\/1851164\/pexels-photo-1851164.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "user_favorite": [
+            "cachorro1@gmail.com"
+        ],
+        "user_gallery": [
+            "https:\/\/images.pexels.com\/photos\/776373\/pexels-photo-776373.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https:\/\/images.pexels.com\/photos\/1448055\/pexels-photo-1448055.jpeg?auto=compress&cs=tinysrgb&w=600"
+        ]
+    },
+    {
+        "user_id": 3,
+        "user_email": "cachorro3@gmail.com",
+        "user_name": "Doguita",
+        "user_breed": "Cavapoo",
+        "user_city": "Madrid",
+        "user_gender": "Female",
+        "user_img": "https:\/\/images.pexels.com\/photos\/58997\/pexels-photo-58997.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "user_favorite": [
+            "cachorro2@gmail.com",
+            "cachorro1@gmail.com"
+        ],
+        "user_gallery": [
+            "https:\/\/images.pexels.com\/photos\/776373\/pexels-photo-776373.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https:\/\/images.pexels.com\/photos\/1448055\/pexels-photo-1448055.jpeg?auto=compress&cs=tinysrgb&w=600"
+        ]
+    },
+    {
+        "user_id": 4,
+        "user_email": "cachorro4@gmail.com",
+        "user_name": "Duck",
+        "user_breed": "Giant-Schnauzer",
+        "user_city": "Valencia",
+        "user_gender": "Male",
+        "user_img": "https:\/\/images.pexels.com\/photos\/220938\/pexels-photo-220938.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "user_favorite": [
+            "cachorro2@gmail.com",
+            "cachorro3@gmail.com"
+        ],
+        "user_gallery": [
+            "https:\/\/images.pexels.com\/photos\/776373\/pexels-photo-776373.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https:\/\/images.pexels.com\/photos\/1448055\/pexels-photo-1448055.jpeg?auto=compress&cs=tinysrgb&w=600"
+        ]
+    },
+    {
+        "user_id": 5,
+        "user_email": "cachorro5@gmail.com",
+        "user_name": "Maria",
+        "user_breed": "Aussiedoodle",
+        "user_city": "Barcelona",
+        "user_gender": "Female",
+        "user_img": "https:\/\/images.pexels.com\/photos\/800330\/pexels-photo-800330.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "user_favorite": [
+            "cachorro2@gmail.com",
+            "cachorro1@gmail.com"
+        ],
+        "user_gallery": [
+            "https:\/\/images.pexels.com\/photos\/776373\/pexels-photo-776373.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https:\/\/images.pexels.com\/photos\/1448055\/pexels-photo-1448055.jpeg?auto=compress&cs=tinysrgb&w=600"
+        ]
+    },
+    {
+        "user_id": "6",
+        "user_name": "Big",
+        "user_email": "cachorro6@gmail.com",
+        "user_breed": "Peek-a-poo",
+        "user_city": "Barcelona",
+        "user_gender": "Male",
+        "user_img": "https:\/\/images.pexels.com\/photos\/825947\/pexels-photo-825947.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "user_favorite": [
+            "cachorro2@gmail.com"
+        ],
+        "user_gallery": [
+            "https:\/\/images.pexels.com\/photos\/776373\/pexels-photo-776373.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https:\/\/images.pexels.com\/photos\/1448055\/pexels-photo-1448055.jpeg?auto=compress&cs=tinysrgb&w=600"
+        ]
+    },
+    {
+        "user_id": "7",
+        "user_name": "Dora",
+        "user_email": "cachorro7@gmail.com",
+        "user_breed": "Yorkipoo",
+        "user_city": "Sabadell",
+        "user_gender": "Female",
+        "user_img": "dog.png",
+        "user_favorite": [
+            "cachorro2@gmail.com",
+            "cachorro1@gmail.com"
+        ],
+        "user_gallery": [
+            "https:\/\/images.pexels.com\/photos\/776373\/pexels-photo-776373.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https:\/\/images.pexels.com\/photos\/1448055\/pexels-photo-1448055.jpeg?auto=compress&cs=tinysrgb&w=600"
+        ]
+    },
+    {
+        "user_id": "8",
+        "user_name": "Cachorro oito",
+        "user_email": "cachorro8@gmail.com",
+        "user_breed": "Border-Collie",
+        "user_city": "Girona",
+        "user_gender": "Female",
+        "user_img": "dog.png",
+        "user_favorite": [
+            "cachorro2@gmail.com",
+            "cachorro1@gmail.com"
+        ],
+        "user_gallery": [
+            "https:\/\/images.pexels.com\/photos\/776373\/pexels-photo-776373.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https:\/\/images.pexels.com\/photos\/1448055\/pexels-photo-1448055.jpeg?auto=compress&cs=tinysrgb&w=600"
+        ]
+    }
 ]
