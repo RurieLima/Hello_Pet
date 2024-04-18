@@ -7,7 +7,6 @@
             <div class="hero-head">
                 <?php
                     require_once("includes/header.php");
-                    //var_dump($_SESSION);
                 ?>
             </div>
             <div class="hero-body py-1">
@@ -22,7 +21,7 @@
                         </div>
                         <div class="column">
                             <div>
-                                <a class="button is-warning is-light my-3 tooltip" href="index.php"><i class="material-icons">backspace</i>
+                                <a class="button has-background-grey has-text-white my-3 tooltip" href="index.php"><i class="material-icons">backspace</i>
                                     <span class="tooltiptext mb-3">Back</span>
                                 </a>
                             </div>

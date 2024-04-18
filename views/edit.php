@@ -16,10 +16,12 @@
                             <div class="columns is-centered p-1 mb-3">                                    
                                 <div class="column is-3 is-offset-8 p-1 m-1">
                                         <!-- Edit form -->
-                                    <form method="POST" action="<?php echo $_SERVER['PHP_SELF'];?> .?m=update">
+                                    <form method="POST" action="<?php echo $_SERVER['PHP_SELF'];?> .?m=update" enctype="multipart/form-data">
+                                        <!-- save favorite in session for send update array -->
                                         <?php 
-                                            $_SESSION["user_edit_favorite"] = $dato['user_favorite']; 
-                                            $_SESSION["user_edit_gallery"] = $dato['user_gallery'];                                         
+                                            $_SESSION["edit_favorite"] = $dato["user_favorite"];
+                                            $_SESSION["edit_gallery"] = $dato["user_gallery"];
+                                            $_SESSION["edit_like"] = $dato["user_like"];
                                         ?>
                                         <div class="card my-3">
                                             <div class="card-header has-background-danger">
@@ -33,14 +35,16 @@
                                                         </figure>
                                                         <div class="control my-2">
                                                             <input type="hidden" name="editImgUser" value="<?php echo $dato['user_img'] ?>">
-                                                            <label class="button is-warning is-light p-2 my-1" for="imgFile">Choose File</label>
                                                             <input class="has-text-centered" type="file" id="imgFile" name="file" hidden>    
-                                                            <input type="hidden" name="MAX_FILE_SIZE" value="30000" />       
+                                                            <input type="hidden" name="MAX_FILE_SIZE" value="30000" />   
+                                                            <label class="button is-primary is-light p-2 my-1 tooltip" for="imgFile">
+                                                                <i class="material-icons">add_a_photo</i>
+                                                                <span class="tooltiptext mb-2">Add file</span>
+                                                            </label>                                                             
                                                         </div>
                                                     </div>                                                 
                                                 </div>   
                                                 <div>
-                                                    <p class="card-content has-background-white-ter	my-3 p-2">
                                                     <div class="control my-2">
                                                         <input type="hidden" name="id" value="<?php echo $dato['user_id'] ?>">
                                                         <input class="input has-text-centered has-text-grey-light" type="text" name="name" value="<?php echo $dato["user_name"] ?>" placeholder="<?php echo $dato["user_name"];?>">
@@ -79,26 +83,32 @@
                                                             </label>
                                                         </div>           
                                                     </div>                                                     
-                                                    </p>                                                 
                                                 </div>                                                   
                                             </div>
-                                            <div class="card-footer has-background-light">
                                                 <!-- Message  -->
                                                 <?php                    
                                                     if(!empty($_SESSION['msg'])){ ?>
-                                                    <p class="help is-success"><?= $_SESSION['msg'] ?></p> 
+                                                    <div>
+                                                        <p class="<?= $_SESSION['msgClass'] ?>" ><?= $_SESSION['msg'] ?></p> 
+                                                    </div>
                                                     <?php $_SESSION['msg'] = ""; 
+                                                        $_SESSION['msgClass'] = ""; 
                                                 }
                                                 ?>
+                                            <div class="card-footer has-background-light">                                          
                                                 <div class="column p-1">                                                     
                                                     <div class="control py-3">
-                                                        <input type="submit" name="edit_save" value="Save" class="button has-background-info has-text-white">
+                                                        <button type="submit" name="edit_save" value="save" class="button has-background-info has-text-white tooltip">
+                                                            <i class="material-icons">save</i>    
+                                                            <span class="tooltiptext mb-2">Save</span>
+                                                        </button>
                                                     </div>
                                                 </div>     
                                                 <div class="column p-1">
                                                     <div class="control py-3">
-                                                        <a href="index.php?m=admin" class="button has-background-grey has-text-white">
-                                                            <strong>Back</strong>
+                                                        <a href="index.php?m=admin" class="button has-background-grey has-text-white tooltip">
+                                                            <i class="material-icons">backspace</i>
+                                                            <span class="tooltiptext mb-2">Back</span>
                                                         </a>
                                                     </div>         
                                                 </div>                                                      

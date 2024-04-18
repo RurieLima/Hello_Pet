@@ -1,26 +1,29 @@
 [
     {
         "user_id": "1",
-        "user_name": "Cara de Concha",
         "user_email": "cachorro1@gmail.com",
-        "user_breed": "Dalmatian",
+        "user_name": "Dalma",
         "user_city": "Madrid",
+        "user_breed": "Dalmatian",
         "user_gender": "Male",
         "user_img": "https:\/\/images.pexels.com\/photos\/933498\/pexels-photo-933498.jpeg?auto=compress&cs=tinysrgb&w=600",
         "user_favorite": [
             "cachorro2@gmail.com",
-            ""
+            "cachorro10@gmail.com"
         ],
         "user_gallery": [
-            "https:\/\/images.pexels.com\/photos\/776373\/pexels-photo-776373.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "https:\/\/images.pexels.com\/photos\/1448055\/pexels-photo-1448055.jpeg?auto=compress&cs=tinysrgb&w=600"
-        ]
+            "https:\/\/images.pexels.com\/photos\/3763313\/pexels-photo-3763313.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            "https:\/\/images.pexels.com\/photos\/101634\/pexels-photo-101634.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https:\/\/images.pexels.com\/photos\/1448365\/pexels-photo-1448365.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https:\/\/images.pexels.com\/photos\/770052\/pexels-photo-770052.jpeg?auto=compress&cs=tinysrgb&w=600"
+        ],
+        "user_like": 1
     },
     {
         "user_id": "2",
         "user_name": "Pedrita",
         "user_email": "cachorro2@gmail.com",
-        "user_breed": "American-Eskimo-Dog",
+        "user_breed": "French-Bulldog",
         "user_city": "Barcelona",
         "user_gender": "Female",
         "user_img": "https:\/\/images.pexels.com\/photos\/1851164\/pexels-photo-1851164.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -28,15 +31,22 @@
             "cachorro1@gmail.com"
         ],
         "user_gallery": [
-            "https:\/\/images.pexels.com\/photos\/776373\/pexels-photo-776373.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "https:\/\/images.pexels.com\/photos\/1448055\/pexels-photo-1448055.jpeg?auto=compress&cs=tinysrgb&w=600"
-        ]
+            "https:\/\/images.pexels.com\/photos\/1851188\/pexels-photo-1851188.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+            "https:\/\/images.pexels.com\/photos\/7788861\/pexels-photo-7788861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            "https:\/\/images.pexels.com\/photos\/7789441\/pexels-photo-7789441.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            "https:\/\/images.pexels.com\/photos\/2437628\/pexels-photo-2437628.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            "https:\/\/images.pexels.com\/photos\/10496120\/pexels-photo-10496120.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https:\/\/images.pexels.com\/photos\/10451055\/pexels-photo-10451055.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https:\/\/images.pexels.com\/photos\/17662371\/pexels-photo-17662371\/free-photo-of-back-view-of-sitting-dog.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https:\/\/images.pexels.com\/photos\/17453825\/pexels-photo-17453825\/free-photo-of-black-dog-in-hat-and-with-toy-watermelon-guitar.jpeg?auto=compress&cs=tinysrgb&w=600"
+        ],
+        "user_like": 2
     },
     {
-        "user_id": 3,
-        "user_email": "cachorro3@gmail.com",
+        "user_id": "3",
         "user_name": "Doguita",
-        "user_breed": "Cavapoo",
+        "user_email": "cachorro3@gmail.com",
+        "user_breed": "Pembroke-Welsh-Corgi",
         "user_city": "Madrid",
         "user_gender": "Female",
         "user_img": "https:\/\/images.pexels.com\/photos\/58997\/pexels-photo-58997.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -45,32 +55,35 @@
             "cachorro1@gmail.com"
         ],
         "user_gallery": [
-            "https:\/\/images.pexels.com\/photos\/776373\/pexels-photo-776373.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "https:\/\/images.pexels.com\/photos\/1448055\/pexels-photo-1448055.jpeg?auto=compress&cs=tinysrgb&w=600"
-        ]
+            "https:\/\/images.pexels.com\/photos\/997564\/pexels-photo-997564.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            "https:\/\/images.pexels.com\/photos\/1805165\/pexels-photo-1805165.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        ],
+        "user_like": 3
     },
     {
-        "user_id": 4,
-        "user_email": "cachorro4@gmail.com",
+        "user_id": "4",
         "user_name": "Duck",
-        "user_breed": "Giant-Schnauzer",
+        "user_email": "cachorro4@gmail.com",
+        "user_breed": "Border-Collie",
         "user_city": "Valencia",
         "user_gender": "Male",
-        "user_img": "https:\/\/images.pexels.com\/photos\/220938\/pexels-photo-220938.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "user_img": "https:\/\/images.pexels.com\/photos\/3523317\/pexels-photo-3523317.jpeg?auto=compress&cs=tinysrgb&w=600",
         "user_favorite": [
             "cachorro2@gmail.com",
             "cachorro3@gmail.com"
         ],
         "user_gallery": [
-            "https:\/\/images.pexels.com\/photos\/776373\/pexels-photo-776373.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "https:\/\/images.pexels.com\/photos\/1448055\/pexels-photo-1448055.jpeg?auto=compress&cs=tinysrgb&w=600"
-        ]
+            "https:\/\/images.pexels.com\/photos\/3523317\/pexels-photo-3523317.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https:\/\/images.pexels.com\/photos\/37860\/border-collie-jump-water-british-sheepdog-37860.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https:\/\/images.pexels.com\/photos\/1562983\/pexels-photo-1562983.jpeg?auto=compress&cs=tinysrgb&w=600"
+        ],
+        "user_like": 0
     },
     {
-        "user_id": 5,
-        "user_email": "cachorro5@gmail.com",
+        "user_id": "5",
         "user_name": "Maria",
-        "user_breed": "Aussiedoodle",
+        "user_email": "cachorro5@gmail.com",
+        "user_breed": "American-Pit-Bull-Terrier",
         "user_city": "Barcelona",
         "user_gender": "Female",
         "user_img": "https:\/\/images.pexels.com\/photos\/800330\/pexels-photo-800330.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -79,58 +92,129 @@
             "cachorro1@gmail.com"
         ],
         "user_gallery": [
-            "https:\/\/images.pexels.com\/photos\/776373\/pexels-photo-776373.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "https:\/\/images.pexels.com\/photos\/1448055\/pexels-photo-1448055.jpeg?auto=compress&cs=tinysrgb&w=600"
-        ]
+            "https:\/\/images.pexels.com\/photos\/800330\/pexels-photo-800330.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https:\/\/images.pexels.com\/photos\/18856993\/pexels-photo-18856993\/free-photo-of-a-brown-and-white-pit-bull-dog-on-a-grass-field.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https:\/\/images.pexels.com\/photos\/18714672\/pexels-photo-18714672\/free-photo-of-pit-bull-on-beach.jpeg?auto=compress&cs=tinysrgb&w=600"
+        ],
+        "user_like": 0
     },
     {
         "user_id": "6",
         "user_name": "Big",
         "user_email": "cachorro6@gmail.com",
-        "user_breed": "Peek-a-poo",
+        "user_breed": "Siberian-Husky",
         "user_city": "Barcelona",
         "user_gender": "Male",
-        "user_img": "https:\/\/images.pexels.com\/photos\/825947\/pexels-photo-825947.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "user_img": "https:\/\/images.pexels.com\/photos\/6530642\/pexels-photo-6530642.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
         "user_favorite": [
             "cachorro2@gmail.com"
         ],
         "user_gallery": [
-            "https:\/\/images.pexels.com\/photos\/776373\/pexels-photo-776373.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "https:\/\/images.pexels.com\/photos\/1448055\/pexels-photo-1448055.jpeg?auto=compress&cs=tinysrgb&w=600"
-        ]
+            "https:\/\/images.pexels.com\/photos\/4083297\/pexels-photo-4083297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            "https:\/\/images.pexels.com\/photos\/3478875\/pexels-photo-3478875.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            "https:\/\/images.pexels.com\/photos\/1559660\/pexels-photo-1559660.jpeg?auto=compress&cs=tinysrgb&w=600"
+        ],
+        "user_like": 1
     },
     {
         "user_id": "7",
         "user_name": "Dora",
         "user_email": "cachorro7@gmail.com",
-        "user_breed": "Yorkipoo",
-        "user_city": "Sabadell",
+        "user_breed": "Golden-Retriever",
+        "user_city": "Sant cugat",
         "user_gender": "Female",
         "user_img": "dog.png",
         "user_favorite": [
-            "cachorro2@gmail.com",
+            "cachorro3@gmail.com",
+            "cachorro5@gmail.com",
+            "cachorro8@gmail.com",
             "cachorro1@gmail.com"
         ],
         "user_gallery": [
             "https:\/\/images.pexels.com\/photos\/776373\/pexels-photo-776373.jpeg?auto=compress&cs=tinysrgb&w=600",
             "https:\/\/images.pexels.com\/photos\/1448055\/pexels-photo-1448055.jpeg?auto=compress&cs=tinysrgb&w=600"
-        ]
+        ],
+        "user_like": 0
     },
     {
         "user_id": "8",
-        "user_name": "Cachorro oito",
+        "user_name": "Cachorro 8",
         "user_email": "cachorro8@gmail.com",
-        "user_breed": "Border-Collie",
-        "user_city": "Girona",
+        "user_breed": "German-Shepherd",
+        "user_city": "Barcelona",
         "user_gender": "Female",
-        "user_img": "dog.png",
+        "user_img": "https:\/\/images.pexels.com\/photos\/236622\/pexels-photo-236622.jpeg?auto=compress&cs=tinysrgb&w=600",
         "user_favorite": [
             "cachorro2@gmail.com",
-            "cachorro1@gmail.com"
+            "cachorro1@gmail.com",
+            "cachorro3@gmail.com"
         ],
         "user_gallery": [
-            "https:\/\/images.pexels.com\/photos\/776373\/pexels-photo-776373.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "https:\/\/images.pexels.com\/photos\/1448055\/pexels-photo-1448055.jpeg?auto=compress&cs=tinysrgb&w=600"
+            "https:\/\/images.pexels.com\/photos\/333083\/pexels-photo-333083.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https:\/\/images.pexels.com\/photos\/1633522\/pexels-photo-1633522.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https:\/\/images.pexels.com\/photos\/342214\/pexels-photo-342214.jpeg?auto=compress&cs=tinysrgb&w=600"
+        ],
+        "user_like": 2
+    },
+    {
+        "user_id": "9",
+        "user_name": "Hulk",
+        "user_email": "cachorro9@gmail.com",
+        "user_breed": "Schnauzer",
+        "user_city": "Madrid",
+        "user_gender": "Male",
+        "user_img": "https:\/\/images.pexels.com\/photos\/3610168\/pexels-photo-3610168.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "user_favorite": [
+            "cachorro2@gmail.com"
+        ],
+        "user_like": 0,
+        "user_gallery": [
+            "https:\/\/images.pexels.com\/photos\/3448793\/pexels-photo-3448793.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https:\/\/images.pexels.com\/photos\/3662361\/pexels-photo-3662361.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https:\/\/images.pexels.com\/photos\/3671389\/pexels-photo-3671389.jpeg?auto=compress&cs=tinysrgb&w=600"
         ]
+    },
+    {
+        "user_id": "10",
+        "user_name": "Cachorro 10",
+        "user_email": "cachorro10@gmail.com",
+        "user_breed": "Shih-Tzu",
+        "user_city": "Girona",
+        "user_gender": "Male",
+        "user_img": "https:\/\/images.pexels.com\/photos\/3361739\/pexels-photo-3361739.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "user_favorite": [
+            "cachorro8@gmail.com",
+            "cachorro2@gmail.com"
+        ],
+        "user_gallery": [
+            "https:\/\/images.pexels.com\/photos\/3361739\/pexels-photo-3361739.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https:\/\/images.pexels.com\/photos\/3215610\/pexels-photo-3215610.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https:\/\/images.pexels.com\/photos\/130771\/pexels-photo-130771.jpeg?auto=compress&cs=tinysrgb&w=600"
+        ],
+        "user_like": 1
+    },
+    {
+        "user_id": 11,
+        "user_name": "Cachorro 11",
+        "user_email": "cachorro11@gmail.com",
+        "user_breed": "American-Water-Spaniel",
+        "user_city": "Valencia",
+        "user_gender": "Female",
+        "user_img": "dog6.jpeg",
+        "user_favorite": [],
+        "user_like": 0,
+        "user_gallery": null
+    },
+    {
+        "user_id": "12",
+        "user_name": "Cachorro 12",
+        "user_email": "cachorro12@gmail.com",
+        "user_breed": "Aussiedoodle",
+        "user_city": "Sabadell",
+        "user_gender": "Male",
+        "user_img": "dog7.jpeg",
+        "user_favorite": [],
+        "user_gallery": [],
+        "user_like": 0
     }
 ]

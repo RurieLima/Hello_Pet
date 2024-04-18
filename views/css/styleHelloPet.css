@@ -7,6 +7,7 @@ h1{text-shadow: 2px 2px 5px rgb(203, 1, 14);}
 .spanIcon{border-radius: 3px; margin: 5px auto;background-color: rgb(255, 255, 255);}
 .spanIcon:hover{background-color: rgba(0, 0, 0, 0.100);}
 .image img {width: 200px; height: 150px; position: relative; left: 10px;}
+.panel-tabs a{border: none;}
 .card-header-name{color: rgba(255, 255, 255, 0.934); text-shadow: 1px 1px 2px rgb(0, 0, 0);}
 .card-footer span{padding: 1px; border-radius: 50%;box-shadow: 1px 1px 1px 1px #80808094;background-color: rgba(255, 255, 255, 0.9);}
 .card-footer span:hover{background-color: rgba(0, 0, 0, 0.1);}
@@ -16,13 +17,16 @@ h1{text-shadow: 2px 2px 5px rgb(203, 1, 14);}
 .figImgAdmin{width: 70px; height: 70px;border-radius: 5px;}
 table{width: 100%; border-radius: 5px;}
 .tdMenuAdmin{display: flex;flex-direction: column;}
+#imgInfo{width: 128px; height: 128px; border-radius: 50%;}
+.spanIconInfo{padding: 10px; margin: 5px; background-color: #ffffff94; border-radius: 50%;box-shadow: 1px 1px 1px 1px #80808094;}
+.spanIconInfo:hover{background-color: rgba(0, 0, 0, 0.1);}
 /* tootip */
 .tooltip {
     position: relative;
     display: inline-block;
     border-radius: 5px;
     border: #fff;
-    box-shadow: 1px 1px 1px 1px rgba(128, 128, 128, 0.050);
+    /* box-shadow: 1px 1px 1px 1px rgba(128, 128, 128, 0.050); */
   }  
 .tooltip .tooltiptext {
     visibility: hidden;
@@ -54,4 +58,29 @@ table{width: 100%; border-radius: 5px;}
     visibility: visible;
     opacity: 1;
   }
-
+.badge {
+  position: absolute;
+  top: 0;
+  right: -7px;
+}
+.badgeInfo {
+  position: absolute;
+  top: 0;
+  right: -7px;
+  border-radius: 50%;
+}
+.badgeHeader{
+  position: relative;
+  bottom: 20px;
+  right: 15px;
+  border-radius: 50%;
+}
+#tootipTextHeader{
+  position: absolute;
+  left: 75%;
+  bottom: 100%;
+}
+.spanIconHeader{
+  position: relative;
+  top: 3px;
+}

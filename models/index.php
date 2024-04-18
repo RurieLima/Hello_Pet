@@ -83,7 +83,7 @@ class User{
         }  
         $favorite = $_SESSION["favorite"];
         $t = count($favorite);
-        if($data){
+        if($t > 0){
             foreach($data as $result){
                 for($i=0;$i<$t;$i++){
                     if($favorite[$i] == $result["user_email"]){
@@ -91,8 +91,10 @@ class User{
                     }  
                 }    
             }
+            return $allData;
+        }else{
+            return false;
         }       
-        return $allData;
     }
     //PROTOTYPE: Array get_city()
     //retrieves users city data from json
@@ -242,6 +244,70 @@ class User{
            return false;
        }
     } 
+    //boolean delete_data_gallery($dataDelete)
+    //delete data gallery from json 
+    public function delete_data_gallery($dataDelete){
+       //open json data       
+       //remove data gallery array 
+        $dataGallery = $_SESSION["gallery"];
+        foreach ($dataGallery as $key => $value) {
+            if($value == $dataDelete){
+                unset($dataGallery[$key]);
+            }else{
+                $array[] = $value;
+                $_SESSION["test"] = $array;
+            }
+        }
+        $_SESSION["gallery"] = $array;               
+        return  $array;     
+   } 
+    //PROTOTYPE: Array get_favorite_data($email)
+    //retrieves favorite data from json
+    public function get_favorite_data($email, $array){
+        $emailFavorite = $_SESSION["favorite"];
+        $t = count($emailFavorite);
+        if($t > 0){
+            for ($i=0; $i < $t; $i++){ 
+                if($emailFavorite[$i] == $email){
+                     //delete favorite 
+                     unset($emailFavorite[$i]);
+                     $id = $_SESSION["id"];
+                     $array["user_favorite"] = array_values($emailFavorite);                    
+                     //update array data user
+                     $result = $this->update_user($array, $id);   
+                     $_SESSION["favorite"] = array_values($array["user_favorite"]);
+                     break;
+                 }else{
+                    //insert favorite
+                    if(!in_array($email, $emailFavorite)){
+                        $id = $_SESSION["id"];
+                        $emailFavorite[] = $email;
+                        $array["user_favorite"] = $emailFavorite;
+                        $result = $this->update_user($array, $id);   
+                        $_SESSION["favorite"] = $array["user_favorite"];
+                        break;
+                    }
+                }    
+            } 
+        }else{
+            //insert favorite
+            $id = $_SESSION["id"];
+            $emailFavorite[] = $email;
+            $array["user_favorite"] = $emailFavorite;
+            $result = $this->update_user($array, $id);   
+            $_SESSION["favorite"] = $array["user_favorite"];
+        }        
+        return $result;
+    }
+
+    //PROTOTYPE: int add_like($email)
+    //retrieves like data from json
+    public function add_like($dataPet, $idPet){
+        $dataPet["user_like"] = $dataPet["user_like"] + 1;
+        $result = $this->update_user($dataPet, $idPet);   
+        return true;              
+    }
+
     //PROTOTYPE: isset id($int)
     //retrieves all id data from json 
     public function get_new_id(){

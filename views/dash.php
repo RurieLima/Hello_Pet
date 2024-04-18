@@ -19,7 +19,6 @@
                             <div class="panel-tabs has-background-white-ter">
                                 <?php                    
                                 if(!empty($_SESSION['name'])){ ?>
-
                                 <div class="columns">
                                     <div class="column">
                                         <div class="columns p-1 my-2">                                                            
@@ -78,11 +77,12 @@
                             <!-- Message  -->
                             <?php                    
                                 if(!empty($_SESSION['msg'])){ ?>
-                                    <div class="my-3">
-                                    <p class="<?= $_SESSION['msgClass'] ?>" ><?= $_SESSION['msg'] ?></p> 
-                                </div>
-                                <?php $_SESSION['msg'] = ""; 
-                                    $_SESSION['msgClass'] = ""; 
+                                    <div class="my-3 p-3 has-background-white box">
+                                        <p class="<?= $_SESSION['msgClass'] ?> has-text-weight-bold"><?= $_SESSION['msg'] ?></p> 
+                                    </div>
+                            <?php 
+                                $_SESSION['msg'] = ""; 
+                                $_SESSION['msgClass'] = ""; 
                             }
                             ?>
                             <div class="is-centered p-1">
@@ -118,18 +118,18 @@
                                                 <div class="card-footer has-background-light">
                                                     <div class="column">
                                                         <a href="index.php?m=info&email=<?php echo $value["user_email"]; ?>" class="tooltip p-1">
-                                                        <span class="p-1 m-1 material-icons has-text-link">pets</span>
+                                                        <span class="p-1 m-1 material-icons has-text-grey">info</span>
                                                         <span class="tooltiptext mb-2">Info's pet</span>
                                                     </a>
                                                     </div>
                                                     <div class="column">
-                                                        <a href="index.php?m=contact&email=<?php echo $value["user_email"]; ?>" class="tooltip p-1">
-                                                        <span class="p-1 m-1 material-icons has-text-primary">question_answer</span>
-                                                        <span class="tooltiptext mb-2">Contact pet</span>
-                                                    </a>
+                                                        <a href="index.php?m=is_like&id=<?php echo $value["user_id"]; ?>" class="tooltip p-1">
+                                                            <span class="p-1 m-1 material-icons has-text-link">thumb_up</span><span class="badge is-size-7 px-2 has-background-danger-dark has-text-white has-text-weight-bold"><?php echo $value["user_like"]; ?></span>
+                                                            <span class="tooltiptext mb-2">Like</span>
+                                                        </a>
                                                     </div>
                                                     <div class="column">
-                                                        <a href="index.php" class="tooltip p-1">
+                                                        <a href="index.php?m=is_favorite&email=<?php echo $value["user_email"]; ?>" class="tooltip p-1">
                                                             <span class="p-1 m-1 material-icons has-text-danger"><?php if(in_array($value["user_email"], $_SESSION["favorite"])){echo "favorite";}else{echo "favorite_border";}?></span>
                                                             <span class="tooltiptext mb-2">Is favorite?</span>
                                                         </a>
@@ -139,7 +139,7 @@
                                         </div>
                                     <?php 
                                         }
-                                    }?>
+                                    } ?>
                                 </div>
                             </div>    
                         </div>
