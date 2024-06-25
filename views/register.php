@@ -12,7 +12,7 @@ require_once("includes/headDoc.php");
             <div class="hero-body py-1">
                 <div class="container has-text-centered">
                     <div>
-                        <h1 class="title is-size-2 p-1 has-text-light">REGISTER</h1>
+                        <h1 class="title is-size-2 p-1 has-text-light">SIGN UP</h1>
                     </div> 
                     <div class="is-centered mb-2 p-2">                                       
                         <div class="columns is-centered p-1">                            
@@ -21,7 +21,7 @@ require_once("includes/headDoc.php");
                                 <form method="POST" action="<?php echo $_SERVER['PHP_SELF'];?> .?m=save_register" name="registerForm" enctype="multipart/form-data">
                                     <div class="card mt-3">
                                         <div class="card-header has-background-danger">
-                                            <p class="card-header-title card-header-name is-centered is-size-4">Pet Info</p>                                        
+                                            <p class="card-header-title card-header-name is-centered is-size-4">Enter the pet's data</p>                                        
                                         </div>
                                         <!-- Message  -->                                
                                         <?php            
@@ -40,10 +40,11 @@ require_once("includes/headDoc.php");
                                                         <input type="hidden" name="userImgNew" value="logoHelloPet.png">
                                                     </figure>
                                                     <div class="control my-2">
-                                                        <label class="button is-primary is-light p-2 my-1 tooltip" for="imgFile">
+                                                        <label class="button is-info is-light p-2 my-1 tooltip" for="imgFile">
                                                             <i class="material-icons">add_a_photo</i>
-                                                            <span class="tooltiptext mb-2">Add file</span>
+                                                            <span class="tooltiptext mb-2">Insert file photo</span>
                                                         </label>
+                                                        <span class="is-block py-2 has-text-grey-dark">Add photo profile</span>
                                                         <input class="has-text-centered" type="file" id="imgFile" name="file" hidden>    
                                                         <input type="hidden" name="MAX_FILE_SIZE" value="50000" />                                            
                                                     </div>
@@ -52,13 +53,13 @@ require_once("includes/headDoc.php");
                                             <div>       
                                                 <div class="control my-2">
                                                     <input type="hidden" name="id">
-                                                    <input class="input has-text-centered has-text-grey-light" type="text" name="name" placeholder="Name">
+                                                    <input class="input has-text-centered has-text-grey-light" type="text" name="name" placeholder="Pet name">
                                                 </div>
                                                 <div class="control my-2">
-                                                    <input class="input has-text-centered has-text-grey-light" type="email" name="email" placeholder="Email">
+                                                    <input class="input has-text-centered has-text-grey-light" type="email" name="email" placeholder="Owner's email">
                                                 </div>
                                                 <div class="control my-2">
-                                                    <select name="breed" class="input has-text-centered has-text-grey-light"> 
+                                                    <select name="Pet breed" class="input has-text-centered has-text-grey-light"> 
                                                     <?php                                                                        
                                                         $json = file_get_contents("./config/breeds.json");
                                                         $result = json_decode($json, true);
@@ -70,7 +71,7 @@ require_once("includes/headDoc.php");
                                                     </select>
                                                 </div>
                                                 <div class="control my-2">
-                                                    <input class="input has-text-centered has-text-grey-light" type="text" name="city" placeholder="City">
+                                                    <input class="input has-text-centered has-text-grey-light" type="text" name="city" placeholder="Pet city">
                                                 </div>
                                                 <div class="control my-2">
                                                     <div class="control">
@@ -95,23 +96,16 @@ require_once("includes/headDoc.php");
                                                     $_SESSION['msgClass'] = ""; 
                                             }
                                             ?>
-                                            <div class="column">                                            
+                                            <div class="column has-background-grey-dark">                                            
                                                 <div class="control py-3">
-                                                    <button type="submit" name="register_save" value="save" class="button has-background-info has-text-white tooltip">
+                                                    <button type="submit" name="register_save" value="save" class="button has-background-success-light has-text-success tooltip mb-5">
                                                         <input type="hidden" name="m" value="save_register">
-                                                        <i class="material-icons">save</i>    
-                                                        <span class="tooltiptext mb-2">Save</span>
+                                                        <i class="material-icons mb-3">save</i>   
+                                                        <span class="is-block has-text-grey-lighter has-text-weight-bold">Save</span> 
+                                                        <span class="tooltiptext mb-2">Save data pet</span>
                                                     </button>
                                                 </div>
-                                            </div>
-                                            <div class="column">
-                                                <div class="control py-3">
-                                                    <a href="index.php" class="button has-background-grey has-text-white tooltip">
-                                                        <i class="material-icons">backspace</i>
-                                                        <span class="tooltiptext mb-2">Back</span>
-                                                    </a>
-                                                </div>         
-                                            </div>                                              
+                                            </div>                              
                                         </div>
                                     </div>
                                 </form>   

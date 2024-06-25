@@ -17,7 +17,17 @@
                             <?php if(!empty($petData)){  
                             foreach($petData as $key => $value){ ?>      
                                 <h1 class="title is-size-4 p-1 mb-3"><?php echo $value["user_name"];?></h1>
-                            </div>                                                                
+                            </div>  
+                            <!-- Message  -->                                
+                            <?php            
+                                if(!empty($_SESSION['msg'])){ ?>
+                                    <div class="pt-3">
+                                    <p class="help is-size-6 <?= $_SESSION['msgClass'] ?>"><?= $_SESSION['msg'] ?></p> 
+                                </div> 
+                                <?php $_SESSION['msg'] = ""; 
+                                        $_SESSION['msgClass'] = "";
+                                }
+                            ?>                                                               
                             <div class="columns mx-0 has-background-white-ter is-vcentered">  
                                 <div class="column is-one-fifth">
                                     <figure>
@@ -41,26 +51,30 @@
                                 <div class="column box m-2">
                                     <span class="material-icons has-text-warning has-text-weight-bold is-size-5 mx-2">location_on</span>                                
                                     <p class="has-text-weight-bold has-text-grey"><?php echo $value["user_city"];?></p>                                        
-                                </div>  
-                                <div class="column is-one-fifth">                                    
-                                    <div class="columns is-vcentered is-gapless p-3">    
-                                        <div class="column is-narrow">
-                                            <a href="index.php?m=is_like&id=<?php echo $value["user_id"]; ?>" class="tooltip p-1">
-                                                <span class="material-icons has-text-link spanIconInfo">thumb_up</span><span class="badgeInfo is-size-7 px-2 has-background-danger-dark has-text-white has-text-weight-bold"><?php echo $value["user_like"]; ?></span>
-                                                <span class="tooltiptext mb-2">Like</span>   
-                                            </a>
-                                        </div>                                              
-                                        <div class="column is-narrow">
-                                            <a href="index.php?m=is_favorite&email=<?php echo $value["user_email"]; ?>" class="tooltip p-1">
-                                                <span class="material-icons has-text-danger spanIconInfo"><?php if(in_array($value["user_email"], $_SESSION["favorite"])){echo "favorite";}else{echo "favorite_border";}?></span>
-                                                <span class="tooltiptext mb-2">Is favorite?</span>
+                                </div>                    
+                            </div>  
+                            <div class="columns mx-0 my-3 is-vcentered is-centered has-background-grey-dark">
+                                <div class="column is-one-fifth p-0 m-0">                                    
+                                    <div class="columns is-vcentered is-gapless is-centered p-3">                                                 
+                                        <div class="column is-narrow mx-3 p-3">
+                                            <a href="index.php?m=is_favorite&id=<?php echo $value["user_id"]; ?>" class="tooltip p-1">
+                                                <span class="p-1 m-1 material-icons has-text-danger"><?php if(in_array($value["user_email"], $_SESSION["favorite"])){echo "favorite";}else{echo "favorite_border";}?></span>
+                                                <span class="is-block py-2 has-text-grey-lighter">Like it?</span>
+                                                <span class="tooltiptext mb-2">Save as favorite</span>
                                             </a> 
                                         </div>
+                                        <div class="column is-narrow mx-3 p-3">
+                                            <a href="index.php?m=contact&name=<?php echo $value["user_name"]; ?>" class="tooltip p-1">
+                                                <span class="p-1 m-1 material-icons has-text-success">perm_phone_msg</span>
+                                                <span class="is-block py-2 has-text-grey-lighter">Get in touch</span>
+                                                <span class="tooltiptext mb-2">Send message</span>
+                                            </a>
+                                        </div>
                                     </div>                                
-                                </div>                                    
-                            </div>   
+                                </div>                  
+                            </div>  
                             <!-- gallery -->
-                            <div class="columns is-mobile is-multiline is-centered">   
+                            <div class="columns is-mobile is-multiline is-centered p-3">   
                                 <?php if(!empty($value["user_gallery"])){ 
                                 $t = count($value["user_gallery"]);
                                 for ($i=0; $i < $t; $i++) { ?>
@@ -84,14 +98,6 @@
                                     }                                       
                                 }
                                 ?>                                                                                                                     
-                            </div>
-                            <div class="columns">
-                                <div class="column p-3">
-                                    <a class="button has-background-grey has-text-white my-3 tooltip" href="index.php">
-                                        <i class="material-icons">backspace</i>
-                                        <span class="tooltiptext mb-2">Back</span>
-                                    </a>
-                                </div>
                             </div>
                         </div>
                     </div>

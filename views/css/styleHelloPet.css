@@ -1,25 +1,23 @@
 *{margin: 0;padding: 0;}
 h1{text-shadow: 2px 2px 5px rgb(203, 1, 14);}
+h2{text-shadow: 1px 1px 1px rgb(255, 255, 255),1px 2px 2px rgb(155, 155, 155);}
+.subtitle{text-shadow: 1px 1px rgb(255, 255, 255);}
 .panel h1{color: rgba(255, 255, 255, 0.934); text-shadow: 1px 1px 2px rgb(0, 0, 0);}
-.aBackground{border-radius: 5px;}
-.aBackground:hover{color: rgb(203, 1, 14);}
-.imgSmall{width: 70px; height:70px; border-radius: 3px; box-shadow: 1px 1px 1px 1px rgba(128, 128, 128, 0.582);}
-.spanIcon{border-radius: 3px; margin: 5px auto;background-color: rgb(255, 255, 255);}
-.spanIcon:hover{background-color: rgba(0, 0, 0, 0.100);}
-.image img {width: 200px; height: 150px; position: relative; left: 10px;}
+.image img {width: 200px; height: 150px; display: inline;}
 .panel-tabs a{border: none;}
+.panel-tabs span{border-radius: 5px;}
 .card-header-name{color: rgba(255, 255, 255, 0.934); text-shadow: 1px 1px 2px rgb(0, 0, 0);}
-.card-footer span{padding: 1px; border-radius: 50%;box-shadow: 1px 1px 1px 1px #80808094;background-color: rgba(255, 255, 255, 0.9);}
-.card-footer span:hover{background-color: rgba(0, 0, 0, 0.1);}
-.navbar-start a:hover{color: #d870933d;}
 .navbar-item img{border-radius: 5px;}
 .card-content .material-icons{position: relative; top: 5px;} 
 .figImgAdmin{width: 70px; height: 70px;border-radius: 5px;}
 table{width: 100%; border-radius: 5px;}
 .tdMenuAdmin{display: flex;flex-direction: column;}
 #imgInfo{width: 128px; height: 128px; border-radius: 50%;}
-.spanIconInfo{padding: 10px; margin: 5px; background-color: #ffffff94; border-radius: 50%;box-shadow: 1px 1px 1px 1px #80808094;}
-.spanIconInfo:hover{background-color: rgba(0, 0, 0, 0.1);}
+/* NAV */
+.hero-head{
+  margin-bottom: -10px;
+  padding: 0px;
+}
 /* tootip */
 .tooltip {
     position: relative;
@@ -27,15 +25,15 @@ table{width: 100%; border-radius: 5px;}
     border-radius: 5px;
     border: #fff;
     /* box-shadow: 1px 1px 1px 1px rgba(128, 128, 128, 0.050); */
-  }  
+}  
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 100px;
-    background-color: #555;
-    color: #fff;
+    width: 120px;
+    background-color: #a3a3a3;
+    color: #fcfcfc;
     text-align: center;
     border-radius: 6px;
-    padding: 3px 0;
+    padding: 5px 0;
     position: absolute;
     z-index: 1;
     left: 50%;
@@ -43,21 +41,21 @@ table{width: 100%; border-radius: 5px;}
     margin-left: -50px;
     opacity: 0;
     transition: opacity 0.3s;
-  }  
-  .tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-  }  
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-  }
+}  
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}  
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
 .badge {
   position: absolute;
   top: 0;
@@ -83,4 +81,8 @@ table{width: 100%; border-radius: 5px;}
 .spanIconHeader{
   position: relative;
   top: 3px;
+}
+/* MEDIA FOR DESKTOP*/
+@media only screen and (min-width: 768px) {
+
 }

@@ -121,11 +121,11 @@ class User{
     }  
     //PROTOTYPE: Array get_pet_info($email)
     //retrieves all data from json, remove user login
-    public function get_pet_info($email){
+    public function get_pet_info($name){
         $users = $this->get_users();
         $t = count($users);
         for ($i=0; $i < $t; $i++) { 
-            if($users[$i]["user_email"] == $email){
+            if($users[$i]["user_name"] == $name){
                 $data[] = $users[$i];
             }
         }  
@@ -299,15 +299,6 @@ class User{
         }        
         return $result;
     }
-
-    //PROTOTYPE: int add_like($email)
-    //retrieves like data from json
-    public function add_like($dataPet, $idPet){
-        $dataPet["user_like"] = $dataPet["user_like"] + 1;
-        $result = $this->update_user($dataPet, $idPet);   
-        return true;              
-    }
-
     //PROTOTYPE: isset id($int)
     //retrieves all id data from json 
     public function get_new_id(){
