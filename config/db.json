@@ -3,14 +3,15 @@
         "user_id": "1",
         "user_name": "Dalma",
         "user_email": "cachorro1@gmail.com",
-        "user_breed": "Dalmatian",
         "user_city": "Madrid",
+        "user_breed": "Dalmatian",
         "user_gender": "Male",
         "user_img": "https:\/\/images.pexels.com\/photos\/933498\/pexels-photo-933498.jpeg?auto=compress&cs=tinysrgb&w=600",
         "user_favorite": [
             "cachorro2@gmail.com",
             "cachorro10@gmail.com",
-            "cachorro6@gmail.com"
+            "cachorro6@gmail.com",
+            "cachorro5@gmail.com"
         ],
         "user_gallery": [
             "https:\/\/images.pexels.com\/photos\/3763313\/pexels-photo-3763313.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
